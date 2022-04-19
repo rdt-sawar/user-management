@@ -1,0 +1,32 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: admin_123
+    url: jdbc:mysql://usermgmt-db.cii5vzevcitx.ap-south-1.rds.amazonaws.com:3306/usermgmtdb
+    username: admin
+ 
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    
+
+  mail:
+    host: smtp.gmail.com
+    password: rdt@sawar@tech
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: rdt.sawar@gmail.com
+    
+mail:
+  smtp:
+    debug: true
